@@ -1,0 +1,116 @@
+:root {
+  --primary: #E31837;
+  /* Tesla Red */
+  --primary-dark: #B3142A;
+  --bg-dark: #0F1113;
+  --bg-card: #1C1F22;
+  --text-main: #FFFFFF;
+  --text-muted: #A0A0A0;
+  --accent: #E31837;
+  --glass-bg: rgba(15, 17, 19, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Bootstrap overrides */
+  --bs-primary: #E31837;
+  --bs-primary-rgb: 227, 24, 55;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+}
+
+.btn-premium {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-premium:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(227, 24, 55, 0.3);
+}
+
+.section-padding {
+  padding: 100px 0;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #FFF 0%, #AAA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-card);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* Fix text contrast on dark backgrounds */
+.bg-dark .text-muted,
+.text-muted {
+  color: var(--text-muted) !important;
+}
+
+.bg-light .text-muted {
+  color: #6c757d !important;
+}
+
+/* Ensure text-primary uses our custom red */
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.bg-primary {
+  background-color: var(--primary) !important;
+}

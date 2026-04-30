@@ -1,0 +1,124 @@
+.contact-section {
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-card {
+    width: 100%;
+    max-width: 600px;
+    padding: 3rem;
+    text-align: center;
+}
+
+.contact-card h2 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
+.contact-card p {
+    margin-bottom: 2rem;
+    opacity: 0.7;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+@media (max-width: 600px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--accent);
+}
+
+/* Callback Toggle */
+.callback-label {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.callback-toggle {
+    position: relative;
+    width: 50px;
+    height: 26px;
+    flex-shrink: 0;
+}
+
+.callback-toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.toggle-slider {
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50px;
+    transition: background 0.3s;
+}
+
+.toggle-slider::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 3px;
+    top: 3px;
+    background: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.callback-toggle.active .toggle-slider {
+    background: var(--accent);
+}
+
+.callback-toggle.active .toggle-slider::before {
+    transform: translateX(24px);
+}
+
+.callback-hint {
+    color: var(--accent);
+    font-weight: 400;
+    font-size: 0.85rem;
+}
+
+.status-msg {
+    margin-top: 0.5rem;
+    font-weight: 600;
+    color: var(--accent);
+    text-align: center;
+}
