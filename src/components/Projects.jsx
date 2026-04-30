@@ -36,6 +36,13 @@ const staticProjects = [
         description: 'Premium e-commerce platform with a focus on high-end fashion and luxury experience.',
         image_url: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=2070&auto=format&fit=crop',
         link_url: 'https://alpha-boutique-app.vercel.app/'
+    },
+    {
+        id: 'alpha-boutique-admin',
+        title: 'Alpha Boutique Admin',
+        description: 'Secure management dashboard for Alpha Boutique, featuring real-time inventory tracking and order fulfillment.',
+        image_url: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop',
+        link_url: 'https://github.com/Igeee254/alpha_boutique_admin'
     }
 ];
 
