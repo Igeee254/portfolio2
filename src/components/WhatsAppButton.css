@@ -14,12 +14,12 @@
     align-items: center;
     justify-content: center;
     transition: transform 0.3s, background-color 0.3s;
+    text-decoration: none;
 }
 
 .whatsapp-float:hover {
     transform: scale(1.1);
     background-color: #128c7e;
-    text-decoration: none;
     color: #FFF;
 }
 
@@ -32,8 +32,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     background-color: #25d366;
     color: #FFF;
     border-radius: 50%;
@@ -46,16 +46,39 @@
 }
 
 .whatsapp-nav .whatsapp-icon {
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
+}
+
+/* Pulsate Effect */
+.wa-pulsate {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #25d366;
+    border-radius: 50%;
+    z-index: -1;
+    animation: wa-pulsate 2s infinite;
+}
+
+@keyframes wa-pulsate {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(1.6);
+        opacity: 0;
+    }
 }
 
 @media (max-width: 768px) {
     .whatsapp-float {
-        width: 50px;
-        height: 50px;
-        bottom: 20px;
-        right: 20px;
+        width: 55px;
+        height: 55px;
+        bottom: 25px;
+        right: 25px;
     }
 
     .whatsapp-icon {
