@@ -1,48 +1,51 @@
 .whatsapp-float {
     position: fixed;
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height: 65px;
     bottom: 40px;
     right: 40px;
-    background-color: #25d366;
+    background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
     color: #FFF;
-    border-radius: 50px;
+    border-radius: 50%;
     text-align: center;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
     z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.3s, background-color 0.3s;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     text-decoration: none;
+    border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .whatsapp-float:hover {
-    transform: scale(1.1);
-    background-color: #128c7e;
-    color: #FFF;
+    transform: scale(1.1) translateY(-5px);
+    box-shadow: 0 15px 35px rgba(37, 211, 102, 0.4);
+    background: linear-gradient(135deg, #2ae06d 0%, #17a091 100%);
 }
 
 .whatsapp-icon {
     width: 35px;
     height: 35px;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
 
 .whatsapp-nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
-    background-color: #25d366;
+    width: 42px;
+    height: 42px;
+    background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
     color: #FFF;
     border-radius: 50%;
-    transition: transform 0.3s, background-color 0.3s;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(37, 211, 102, 0.2);
 }
 
 .whatsapp-nav:hover {
-    transform: scale(1.1);
-    background-color: #128c7e;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(37, 211, 102, 0.3);
 }
 
 .whatsapp-nav .whatsapp-icon {
@@ -50,7 +53,7 @@
     height: 22px;
 }
 
-/* Pulsate Effect */
+/* Pulsate Effect - Realer movement */
 .wa-pulsate {
     position: absolute;
     width: 100%;
@@ -58,31 +61,36 @@
     background-color: #25d366;
     border-radius: 50%;
     z-index: -1;
-    animation: wa-pulsate 2s infinite;
+    animation: wa-pulsate 2.5s infinite;
 }
 
 @keyframes wa-pulsate {
     0% {
         transform: scale(1);
-        opacity: 0.8;
+        opacity: 0.6;
+    }
+
+    70% {
+        transform: scale(1.5);
+        opacity: 0;
     }
 
     100% {
-        transform: scale(1.6);
+        transform: scale(1);
         opacity: 0;
     }
 }
 
 @media (max-width: 768px) {
     .whatsapp-float {
-        width: 55px;
-        height: 55px;
+        width: 58px;
+        height: 58px;
         bottom: 25px;
         right: 25px;
     }
 
     .whatsapp-icon {
-        width: 30px;
-        height: 30px;
+        width: 32px;
+        height: 32px;
     }
 }
