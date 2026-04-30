@@ -3,6 +3,20 @@ import './Projects.css';
 
 const staticProjects = [
     {
+        id: 'kwelistore-kenya',
+        title: 'KweliStore Premium',
+        description: 'Modern Android e-commerce ecosystem built with React Native and Expo, featuring M-Pesa integration and high-performance native bundling.',
+        image_url: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070&auto=format&fit=crop',
+        link_url: 'https://github.com/Igeee254/el_uncle'
+    },
+    {
+        id: 'kwelistore-admin',
+        title: 'KweliStore Admin Hub',
+        description: 'Secure native administrative control panel for real-time inventory management, order tracking, and store metrics.',
+        image_url: 'https://images.unsplash.com/photo-1540340334550-6390d4cf885c?q=80&w=2070&auto=format&fit=crop',
+        link_url: 'https://github.com/Igeee254/el_uncle_admin'
+    },
+    {
         id: 'car-marketplace-pwa',
         title: 'AUTOMARKET Premium',
         description: 'High-end automotive marketplace PWA with 360-view visualization and realistic Kenyan (KES) pricing.',
@@ -10,25 +24,11 @@ const staticProjects = [
         link_url: 'https://car-markeplace.vercel.app/'
     },
     {
-        id: 'greenville-app',
-        title: 'Greenville App',
-        description: 'A comprehensive solution for eco-friendly resource management and green initiatives.',
-        image_url: '/greenville_g.svg',
-        link_url: 'https://github.com/Igeee254/greenview-er'
-    },
-    {
         id: 'alpha-boutique',
         title: 'Alpha Boutique',
         description: 'Premium e-commerce platform with a focus on high-end fashion and luxury experience.',
         image_url: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=2070&auto=format&fit=crop',
         link_url: 'https://alpha-boutique-app.vercel.app/'
-    },
-    {
-        id: 'alpha-boutique-admin',
-        title: 'Alpha Boutique Admin',
-        description: 'Advanced inventory and order management system for the Alpha Boutique ecosystem.',
-        image_url: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop',
-        link_url: '#'
     }
 ];
 
