@@ -55,23 +55,30 @@
 .theme-toggle {
     background: none;
     border: none;
-    font-size: 1.2rem;
     cursor: pointer;
-    padding: 0.5rem;
-    border-radius: 50%;
-    transition: background 0.3s;
+    padding: 0;
 }
 
 .theme-toggle:hover {
     background: rgba(255, 255, 255, 0.1);
 }
 
-.theme-toggle,
 .hero-text h1 {
     font-size: 4.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     line-height: 1.1;
     font-weight: 800;
+}
+
+.theme-toggle {
+    font-size: 1.2rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: var(--transition);
 }
 
 .account-icon {

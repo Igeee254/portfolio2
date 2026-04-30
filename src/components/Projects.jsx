@@ -6,21 +6,28 @@ const staticProjects = [
         id: 'kwelistore-kenya',
         title: 'KweliStore Premium',
         description: 'Modern Android e-commerce ecosystem built with React Native and Expo, featuring M-Pesa integration and high-performance native bundling.',
-        image_url: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070&auto=format&fit=crop',
-        link_url: 'https://github.com/Igeee254/el_uncle'
+        image_url: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?q=80&w=2070&auto=format&fit=crop',
+        link_url: 'https://kwelistore-kenya.vercel.app/' // Assuming this is the link based on context
     },
     {
         id: 'kwelistore-admin',
         title: 'KweliStore Admin Hub',
         description: 'Secure native administrative control panel for real-time inventory management, order tracking, and store metrics.',
-        image_url: 'https://images.unsplash.com/photo-1540340334550-6390d4cf885c?q=80&w=2070&auto=format&fit=crop',
+        image_url: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop',
         link_url: 'https://github.com/Igeee254/el_uncle_admin'
+    },
+    {
+        id: 'greenview-app',
+        title: 'Greenview Real Estate',
+        description: 'Luxury property management and listing platform featuring immersive galleries and automated lead generation.',
+        image_url: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1973&auto=format&fit=crop',
+        link_url: 'https://greenview-app.vercel.app/'
     },
     {
         id: 'car-marketplace-pwa',
         title: 'AUTOMARKET Premium',
         description: 'High-end automotive marketplace PWA with 360-view visualization and realistic Kenyan (KES) pricing.',
-        image_url: 'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?q=80&w=2070&auto=format&fit=crop',
+        image_url: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=2070&auto=format&fit=crop',
         link_url: 'https://car-markeplace.vercel.app/'
     },
     {
